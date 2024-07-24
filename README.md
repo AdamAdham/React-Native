@@ -2,7 +2,7 @@
 Renders **Native** components instead of html components like react js <br>
 
 **<View>**: Container which uses flexbox
-**<Text>**: Used instead of <h1> or <p>
+**<Text>**: Used instead of '<h1>' or '<p>' 
 
 
 ```jsx
