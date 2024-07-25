@@ -1,6 +1,8 @@
 # React-Native-Notes
 Renders **Native** components instead of html components like react js <br>
 
+Video tutorial : https://youtu.be/ZBCUegTZF7M?si=UvL6lcsjDGUANefT <br>
+
 **<View>**: Container which uses flexbox
 **<Text>**: Used instead of h1 or p 
 ```jsx
@@ -120,3 +122,77 @@ export default App
 
 ### StatusBar
 To control the appearance top of the screen
+
+# Initialization
+
+-c means clear all the previous cache
+```cmd
+npx create-expo-app AppName
+cd AppName
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+npx expo start -c
+```
+
+In app.json change {scheme:"your app name"}, since this is used to deep link expo and react native applications <br>
+It is a technique to allow the app to be opened using a specific string directly from a url outside of the app (eg: email,webpage or another app)
+**name:** Name that appears on the app's homescreen
+**slug:** URL friendly version of the app name
+```json
+{
+  "expo": {
+    "name": "app",
+    "slug": "app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
+```
+## Tailwind
+tailwind.config.js file <br>
+**: means all folders <br>
+*: means all files
+```js
+/** @type {import('tailwindcss').Config} */
+dule.exports = {
+content: "./app/**/*.{js,jsx, ts, tsx}", "./components/**/*. {js, jsx, ts, tsx}"],
+theme: {
+extend: {},
+},
+plugins: [],
+}
+```
+
+## Notes
+_layout is visible on all screens
+
+## Shortcuts
+
+**rnfes:** To get the boilerplate code
