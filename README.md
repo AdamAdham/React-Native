@@ -192,7 +192,12 @@ plugins: [],
 ```
 
 ## Notes
-_layout is visible on all screens
+- **Directories** are called _route groups_ and the **files*** inside them _screens_
+- _layout is visible on all screens
+- If we have a directory with parenthesis (directory name) -> it can have its own _layout
+- **Dynamic Route** is [fileName]
+
+
 
 ## Shortcuts
 
