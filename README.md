@@ -2,7 +2,7 @@
 Renders **Native** components instead of html components like react js <br>
 
 Video tutorial : https://youtu.be/ZBCUegTZF7M?si=UvL6lcsjDGUANefT <br>
-Repo: https://github.com/adrianhajdin/aora/tree/main/app <br>
+Repo:  https://github.com/adrianhajdin/aora <br>
 
 **<View>**: Container which uses flexbox
 **<Text>**: Used instead of h1 or p 
