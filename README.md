@@ -196,6 +196,23 @@ plugins: [],
 - _layout is visible on all screens
 - If we have a directory with parenthesis (directory name) -> it can have its own _layout
 - **Dynamic Route** is [fileName]
+- Can not have 
+```js
+// Wrong
+useEffect(async()=>{
+  // logic
+})
+
+//Correct
+useEffect(()=>{
+  asyncronousFunction = async()=>{
+    //Logic
+  }
+  asyncronousFunction()
+
+})
+```
+
 
 
 
