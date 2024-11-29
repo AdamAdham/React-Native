@@ -213,7 +213,16 @@ useEffect(()=>{
 })
 ```
 
-
+### UseEffect Unexpected Behaviour
+#### Problem
+If the useEffect isnt getting called when the elements of the dependencies array have changed, could be due:
+React may optimize unnecessary re-renders, especially if the `element` in the dependencies array is an object then React is technically "shallow equal" to its previous value (even though its internal content changes). This can cause the effect not to run again if React thinks the instructions prop hasn't really changed (due to shallow comparison).
+#### Solution
+Pass a new reference
+```js
+setVariable([...newVariableArray])
+setVariable({...newVariableObject})
+```
 
 
 ## Shortcuts
