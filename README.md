@@ -56,6 +56,9 @@ To allow all content to be viewed regardless of screen
 ```jsx
 import SafeAreaView from 'react-native-safe-area-context'
 ```
+#### react-native-safe-context
+is used because some report SafeAreaView doesn'nt always work
+
 ### Image
 Display an image
 
